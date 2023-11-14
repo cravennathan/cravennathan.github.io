@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Baby Announcement!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Refresh" content="3; url='./Announcement.html'" />
+</head>
+<body class="page">
+    <div class="image-container">
+        <img class="image" src="./baby-no.gif" type="video/gif" alt="a baby shaking their head 'No'"/>
+    </div>
+</body>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .page {
+        display: grid;
+        justify-content: center;
+        padding: 1.5em;
+        height: 100vh;
+        background-image: url('./thanksgiving-background.jpg');
+        background-size: cover;
+    }
+    
+    .page .image-container {
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page .image-container .image {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+</style>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <title>Baby Announcement!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="page">
+    <div class="actions-row">
+        <a class="boy" href="./incorrect-choice.html">boy</a>
+        <div class="delimiter">or</div>
+        <a class="girl" href="./correct-choice.html">girl</a>
+    </div>
+    <div class="video-container">
+        <video
+            class="video"
+            loop
+            controls
+        >
+            <source src="./Baby_Craven_Nov_2023.MP4" type="video/mp4"/>
+            Your browser does not support this video. It is a video of a baby ultrasound.
+        </video>
+    </div>
+</body>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .page {
+        display: grid;
+        justify-content: center;
+        padding: 1.5em;
+        background-image: url('./thanksgiving-background.jpg');
+        background-size: cover;
+    }
+
+    .page .actions-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 1em;
+    }
+    
+    .page .actions-row a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3em;
+        font-size: 2em;
+        font-weight: bolder;
+        border-radius: .5em;
+        padding: 8px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .page .actions-row .delimiter {
+        font-size: 1.5em;
+        background-color: white;
+        padding: 0 6px;
+        border-radius: .5em;
+    }
+
+    .page .actions-row .girl {
+        background-color: coral;
+    }
+
+    .page .actions-row .boy {
+        background-color: aqua;
+    }
+
+    .page .video-container {
+        height: calc(100vh - 8.375em);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page .video-container .video {
+        width: 100%;
+        max-height: calc(100vh - 8.375em);
+        object-fit: cover;
+        object-position: top;
+    }
+</style>
