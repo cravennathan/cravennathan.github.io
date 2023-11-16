@@ -5,6 +5,7 @@
     <meta http-equiv="Refresh" content="3; url='./announcement.html'" />
 </head>
 <body class="page">
+    <h1 class="text">Not this time</h1>
     <div class="image-container">
         <img class="image" src="./baby-no.gif" type="video/gif" alt="a baby shaking their head 'No'"/>
     </div>
@@ -18,10 +19,21 @@
     .page {
         display: grid;
         justify-content: center;
+        align-items: center;
         padding: 1.5em;
         height: 100vh;
         background-image: url('./thanksgiving-background.jpg');
         background-size: cover;
+    }
+
+    .page .text {
+        margin: 0;
+        font-size: xxx-large;
+        background-color: #f2685b;
+        color: black;
+        padding: 24px;
+        border-radius: 50%;
+        text-align: center;
     }
     
     .page .image-container {

@@ -5,18 +5,48 @@
     <meta http-equiv="Refresh" content="3; url='./announcement.html'" />
 </head>
 <body class="page">
-    TODO FINISH MAKING THIS PAGE
-    <h1>correct</h1>
+    <h1 class="text">It's a Girl!</h1>
+    <div class="image-container">
+        <img class="image" src="./baby-girl-dancing.gif" type="video/gif" alt="a little girl dancing"/>
+    </div>
 </body>
 
 <style>
     * {
         box-sizing: border-box;
     }
+
     .page {
         display: grid;
         justify-content: center;
+        align-items: center;
         padding: 1.5em;
-        background-color: aqua;
+        height: 100vh;
+        background-image: url('./thanksgiving-background.jpg');
+        background-size: cover;
+    }
+
+    .page .text {
+        margin: 0;
+        font-size: xxx-large;
+        color: black;
+        background-color: #f2685b;
+        padding: 24px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .page .image-container {
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page .image-container .image {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: top;
     }
 </style>
