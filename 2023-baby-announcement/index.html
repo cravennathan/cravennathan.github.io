@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="page">
-    <div class="actions-row">
+    <div class="actions-row" style="align-self: flex-end;">
         <a class="boy" href="./incorrect-choice.html">boy</a>
         <div class="delimiter">or</div>
         <a class="girl" href="./correct-choice.html">girl</a>
@@ -12,12 +12,18 @@
     <div class="video-container">
         <video
             class="video"
+            autoplay
             loop
             controls
         >
             <source src="./Baby_Craven_Nov_2023.MP4" type="video/mp4"/>
             Your browser does not support this video. It is a video of a baby ultrasound.
         </video>
+    </div>
+    <div class="actions-row" style="align-self: flex-start;">
+        <a class="girl" href="./correct-choice.html">girl</a>
+        <div class="delimiter">or</div>
+        <a class="boy" href="./incorrect-choice.html">boy</a>
     </div>
 </body>
 
@@ -28,17 +34,19 @@
 
     .page {
         display: grid;
+        gap: 1em;
         justify-content: center;
         padding: 1.5em;
         background-image: url('./thanksgiving-background.jpg');
         background-size: cover;
+        height: 100vh;
+        overflow: hidden;
     }
 
     .page .actions-row {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-bottom: 1em;
     }
     
     .page .actions-row a {
@@ -71,7 +79,7 @@
     }
 
     .page .video-container {
-        height: calc(100vh - 8.375em);
+        height: 100%;
         display: grid;
         justify-content: center;
         align-items: center;
@@ -79,7 +87,7 @@
 
     .page .video-container .video {
         width: 100%;
-        max-height: calc(100vh - 8.375em);
+        max-height: 50vh;
         object-fit: cover;
         object-position: top;
     }
